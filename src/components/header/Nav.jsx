@@ -15,7 +15,7 @@ const Nav = () => {
                             <a href="\contact">Contact</a>
                         </ul>
                     </div>
-                    <a className=" text-xl font-mono font-semibold"> My Assignment</a>
+                    <a className=" text-xl font-mono font-semibold hover:text-orange-500"> My Assignment</a>
                 </div>
                 <div className="navbar-end hidden lg:flex">
                     <ul className="">
@@ -24,7 +24,7 @@ const Nav = () => {
                         < a className='mx-4 font-semibold font-mono text-gray-400 hover:text-orange-500' href="\contact">Contact</a>
                     </ul>
                 </div>
-                <div className="w-2/12">
+                <div className="w-2/12 ml-12">
                     <img className='lg:w-4/12 rounded-full ' src="https://media.istockphoto.com/id/1299733036/photo/one-spanish-senior-man-headshot-portrait-smiling-at-the-camera.webp?s=1024x1024&w=is&k=20&c=X-_yZaA1zFkp6kCVfhJFYhuNAtk_cdPv540Pqloy3iI=" alt="" />
                 </div>
             </div>

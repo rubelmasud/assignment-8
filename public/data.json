@@ -2,36 +2,36 @@
     {
         "id": 1,
         "title": "How to get your first job as a self-taught programmer",
-        "cover-url": "https://unsplash.com/photos/LJ9KY8pIH3E",
-        "parson-name": "Mrs. Setara",
-        "parson-img": "https://media.istockphoto.com/id/1458494333/photo/portrait-of-senior-male-writer-in-office.jpg?b=1&s=170667a&w=0&k=20&c=ZyedSQYXIXQnIH2AF-HK6Sgk2g2cB0mT2gkfeXfga6U=",
+        "coverUrl": "https://burst.shopifycdn.com/photos/developers-discussing-javascript-code.jpg?width=1850&format=pjpg&exif=1&iptc=1",
+        "parsonName": "Mrs. Setara",
+        "parsonImg": "https://media.istockphoto.com/id/1458494333/photo/portrait-of-senior-male-writer-in-office.jpg?b=1&s=170667a&w=0&k=20&c=ZyedSQYXIXQnIH2AF-HK6Sgk2g2cB0mT2gkfeXfga6U=",
         "date": "march-10",
         "min": "06"
     },
     {
         "id": 2,
         "title": "This is Programming of web development",
-        "cover-url": "https://unsplash.com/photos/8qEB0fTe9Vw",
-        "parson-name": "Mrs.Jamey",
-        "parson-img": "https://media.istockphoto.com/id/1458494333/photo/portrait-of-senior-male-writer-in-office.webp?s=1024x1024&w=is&k=20&c=Xu0V4tUQkSOgXnVv8QbJ_0sYeD-uHj9EziuyZg8Mppk=",
+        "coverUrl": "https://burst.shopifycdn.com/photos/javascript-with-laptop-code.jpg?width=1850&format=pjpg&exif=1&iptc=1",
+        "parsonName": "Mrs.Jamey",
+        "parsonImg": "https://burst.shopifycdn.com/photos/young-professional.jpg?width=1850&format=pjpg&exif=1&iptc=1",
         "date": "march-03",
         "min": "09"
     },
     {
         "id": 3,
         "title": "This is Programming of App development",
-        "cover-url": "https://unsplash.com/photos/DPWCpOzx8SA",
-        "parson-name": "Mr.Kristin",
-        "parson-img": "https://unsplash.com/photos/wy_xAOGSEgU",
+        "coverUrl": "https://burst.shopifycdn.com/photos/coding-on-laptop.jpg?width=1850&format=pjpg&exif=1&iptc=1",
+        "parsonName": "Mr.Kristin",
+        "parsonImg": "https://burst.shopifycdn.com/photos/model-with-leather-jacket-over-shoulders.jpg?width=1850&format=pjpg&exif=1&iptc=1",
         "date": "march-12",
         "min": "03"
     },
     {
         "id": 4,
         "title": "This is Programming of Machine learning",
-        "cover-url": "https://www.istockphoto.com/photo/machine-learning-and-abstract-program-code-on-the-digital-display-gm1368998831-438852810?utm_source=unsplash&utm_medium=affiliate&utm_campaign=srp_photos_bottom&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fprogramming-Machine-learning&utm_term=programming%20Machine%20learning%3A%3A%3A",
-        "parson-name": "Mr.jone",
-        "parson-img": "https://img.freepik.com/free-photo/handsome-mature-businessman-looking-confident-smiling_176420-31691.jpg?w=996&t=st=1680236867~exp=1680237467~hmac=504021593e4dcd704a385cc8ee743e0f9a5b52b11b889a62e33d77f11e78c563",
+        "coverUrl": "https://burst.shopifycdn.com/photos/finger-pointing-at-javascript-code.jpg?width=1850&format=pjpg&exif=1&iptc=1",
+        "parsonName": "Mr.jone",
+        "parsonImg": "https://img.freepik.com/free-photo/handsome-mature-businessman-looking-confident-smiling_176420-31691.jpg?w=996&t=st=1680236867~exp=1680237467~hmac=504021593e4dcd704a385cc8ee743e0f9a5b52b11b889a62e33d77f11e78c563",
         "date": "march-15",
         "min": "10"
     }
