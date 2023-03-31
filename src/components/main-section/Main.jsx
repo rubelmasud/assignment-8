@@ -13,13 +13,13 @@ const Main = () => {
 
     return (
         <div className='w-11/12 mx-auto lg:flex my-12 gap-3'>
-            <div className="cart-details lg:w-9/12 bg-yellow-400">
+            <div className="cart-details lg:w-9/12 ">
                 {
                     blogs.map(blog => <SingleCart blog={blog}></SingleCart>)
                 }
             </div>
-            <div className="add-cart lg:w-3/12 bg-red-200">
-                w55jye5wy
+            <div className="add-cart lg:w-3/12 bg-gray-50 ">
+
             </div>
         </div>
     );
