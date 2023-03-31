@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import SingleCart from '../singleCart/SingleCart';
+import SideCart from '../sideCart/SideCart';
 
 const Main = () => {
 
     const [blogs, setBlogs] = useState([])
+    const [time, setTime] = useState(0)
 
     useEffect(() => {
         fetch('../../../public/data.json')
@@ -11,26 +13,28 @@ const Main = () => {
             .then(data => setBlogs(data))
     }, [])
 
+
+
+    const addMinHandler = (min) => {
+        const previesMin = parseFloat(min) + parseFloat(time)
+        setTime(previesMin)
+        console.log(previesMin);
+    }
+
+
     return (
         <div className='w-11/12 mx-auto lg:flex my-12 gap-3'>
             <div className="cart-details lg:w-9/12 ">
                 {
-                    blogs.map(blog => <SingleCart blog={blog}></SingleCart>)
+                    blogs.map(blog => <SingleCart
+                        blog={blog}
+                        key={blog.id}
+                        addMinHandler={addMinHandler}
+                    ></SingleCart>)
                 }
             </div>
             <div className="add-cart lg:w-3/12 bg-gray-50 ">
-                <div className="total-min-container my-4 bg-gray-50 h-12 rounded text-center">
-                    <h4 className='text-2xl font-semibold text-blue-700'>Spent time on read:min</h4>
-                </div>
-                <div className="total-min-container bg-gray-50 rounded px-4">
-                    <div className="blogs-quantity ">
-                        <h4 className='text-2xl font-semibold'>Bookmarked Blogs : </h4>
-                    </div>
-                    <div className="title-cart m-6 p-3 rounded bg-white">
-                        jteyje6
-                    </div>
-
-                </div>
+                <SideCart time={time}></SideCart>
             </div>
         </div>
     );

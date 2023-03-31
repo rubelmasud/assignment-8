@@ -3,8 +3,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
 const SingleCart = (props) => {
-    console.log(props.blog);
+
     const { title, coverUrl, parsonName, parsonImg, min, date } = props.blog
+    const addMinHandler = props.addMinHandler
+
+
+    const addBookMarkHandler = () => {
+        console.log('tjsytyrrsys');
+    }
+
+
     return (
         <div className=' cart-section border px-6 my-10 rounded bg-gray-50'>
             <img className='m-6 rounded-lg mx-auto ' src={coverUrl} alt="" />
@@ -22,7 +30,7 @@ const SingleCart = (props) => {
                     <div className="blog-min-time">
                         <p className='font-semibold'>
                             {min} min read
-                            <FontAwesomeIcon className='pl-2' icon={faBookmark} />
+                            <FontAwesomeIcon onClick={addBookMarkHandler} className='pl-2' icon={faBookmark} />
                         </p>
                     </div>
                 </div>
@@ -31,7 +39,7 @@ const SingleCart = (props) => {
                 <h3 className='text-4xl font-sans font-semibold'>{title}</h3>
             </div>
             <p className='text-gray-500'>#beginners #programming</p>
-            <button className='text-blue-400 underline mb-10 mt-5'>Mark as read</button>
+            <button onClick={() => addMinHandler(min)} className='text-blue-400 underline mb-10 mt-5'>Mark as read</button>
         </div>
     );
 };
