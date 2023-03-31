@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import Nav from './components/header/Nav'
 import Main from './components/main-section/Main'
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <Nav />
       <Main />
+      <ToastContainer></ToastContainer>
     </div>
   )
 }

@@ -6,11 +6,9 @@ const SingleCart = (props) => {
 
     const { title, coverUrl, parsonName, parsonImg, min, date } = props.blog
     const addMinHandler = props.addMinHandler
+    const addBookMarkHandler = props.addBookMarkHandler
 
 
-    const addBookMarkHandler = () => {
-        console.log('tjsytyrrsys');
-    }
 
 
     return (
@@ -30,7 +28,7 @@ const SingleCart = (props) => {
                     <div className="blog-min-time">
                         <p className='font-semibold'>
                             {min} min read
-                            <FontAwesomeIcon onClick={addBookMarkHandler} className='pl-2' icon={faBookmark} />
+                            <FontAwesomeIcon onClick={() => addBookMarkHandler(title)} className='pl-2' icon={faBookmark} />
                         </p>
                     </div>
                 </div>

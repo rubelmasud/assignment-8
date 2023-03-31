@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import SingleCart from '../singleCart/SingleCart';
 import SideCart from '../sideCart/SideCart';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Main = () => {
 
@@ -14,11 +15,21 @@ const Main = () => {
     }, [])
 
 
-
     const addMinHandler = (min) => {
-        const previesMin = parseFloat(min) + parseFloat(time)
-        setTime(previesMin)
-        console.log(previesMin);
+        const sum = parseFloat(min) + parseFloat(time)
+        setTime(sum)
+    }
+
+    const addBookMarkHandler = (title) => {
+
+        const previousStorageTitle = localStorage.getItem('BlogTitle')
+        if (previousStorageTitle) {
+            toast("This Already Added !");
+        }
+        else {
+            localStorage.setItem('BlogTitle', title)
+        }
+
     }
 
 
@@ -30,10 +41,11 @@ const Main = () => {
                         blog={blog}
                         key={blog.id}
                         addMinHandler={addMinHandler}
+                        addBookMarkHandler={addBookMarkHandler}
                     ></SingleCart>)
                 }
             </div>
-            <div className="add-cart lg:w-3/12 bg-gray-50 ">
+            <div className="add-cart lg:w-3/12 bg-slate-100 ">
                 <SideCart time={time}></SideCart>
             </div>
         </div>
