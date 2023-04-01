@@ -3,10 +3,13 @@ import SingleCart from '../singleCart/SingleCart';
 import SideCart from '../sideCart/SideCart';
 import { ToastContainer, toast } from 'react-toastify';
 
+
 const Main = () => {
 
     const [blogs, setBlogs] = useState([])
     const [time, setTime] = useState(0)
+    const [bookMark, setBookMark] = useState([])
+    const [quantity, setQuantity] = useState(0)
 
     useEffect(() => {
         fetch('../../../public/data.json')
@@ -20,17 +23,14 @@ const Main = () => {
         setTime(sum)
     }
 
-    const addBookMarkHandler = (title) => {
+    const addBookMarkHandler = (title, id) => {
+        let newQuantity = quantity + 1;
+        setQuantity(newQuantity)
 
-        const previousStorageTitle = localStorage.getItem('BlogTitle')
-        if (previousStorageTitle) {
-            toast("This Already Added !");
-        }
-        else {
-            localStorage.setItem('BlogTitle', title)
-        }
-
+        const newBookmark = [...bookMark, title, <br />]
+        setBookMark(newBookmark)
     }
+
 
 
     return (
@@ -46,7 +46,11 @@ const Main = () => {
                 }
             </div>
             <div className="add-cart lg:w-3/12 bg-slate-100 ">
-                <SideCart time={time}></SideCart>
+                <SideCart
+                    time={time}
+                    bookMark={bookMark}
+                    quantity={quantity}
+                ></SideCart>
             </div>
         </div>
     );

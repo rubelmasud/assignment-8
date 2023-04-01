@@ -4,7 +4,7 @@ import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
 const SingleCart = (props) => {
 
-    const { title, coverUrl, parsonName, parsonImg, min, date } = props.blog
+    const { title, coverUrl, parsonName, parsonImg, min, date, id } = props.blog
     const addMinHandler = props.addMinHandler
     const addBookMarkHandler = props.addBookMarkHandler
 
@@ -28,7 +28,7 @@ const SingleCart = (props) => {
                     <div className="blog-min-time">
                         <p className='font-semibold'>
                             {min} min read
-                            <FontAwesomeIcon onClick={() => addBookMarkHandler(title)} className='pl-2' icon={faBookmark} />
+                            <FontAwesomeIcon onClick={() => addBookMarkHandler(title, id)} className='pl-2' icon={faBookmark} />
                         </p>
                     </div>
                 </div>
